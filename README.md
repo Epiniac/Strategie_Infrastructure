@@ -5,17 +5,30 @@ Développer une application web statique, ultra-légère et 100% accessible, con
 L’application respecte les normes WCAG 2.1 (niveau AAA ciblé), sans frameworks modernes, et est déployée via GitHub Pages.
 
 ## 🧩 Thème & Problématique
-**Thème :** [à compléter — métier ciblé, ex: "Artisans indépendants"]  
-**Problématique :** [à compléter — besoin concret du métier]
+**Thème :** Bounty Hunter
+**Objectif** : Fournir aux chasseurs de primes un outil numérique minimaliste pour les aider à gérer leurs missions, améliorer leur sécurité et assurer une meilleure conformité légale.​
+**Problématique :** Comment améliorer la sécurité, l'efficacité et la conformité légale des chasseurs de primes tout en respectant les contraintes techniques d'une application web ultra-légère et accessible ?
 
-> _"Notre application répond à un besoin réel de ce corps de métier en apportant une solution simple, rapide et accessible."_  
+> _"Notre application répond à un besoin réel de ce corps de métier en apportant une solution simple, rapide et accessible."_
+
+## 🛠️ Fonctionnalités clés
+
+**Gestion des missions** : Interface simple pour enregistrer et suivre les missions en cours, avec des informations essentielles sur les fugitifs.​
+
+**Checklist de conformité légale** : Guides interactifs rappelant les procédures légales à suivre selon l'État concerné.​
+
+**Journal de bord sécurisé** : Possibilité de consigner les actions entreprises lors de chaque mission, utile en cas de vérification ou de litige.​
+
+**Ressources et formations** : Accès à des documents et vidéos de formation sur les meilleures pratiques et la gestion des risques.
+
+> _"C'est border..."_
 
 ## 👥 Équipe (Groupe de 5)
-- John Doe — Header / Accessibilité
-- Alice Smith — Footer / Responsive
-- Maxime Dupont — Navigation & Semantique HTML
-- Clara Dubois — Tests / Audit / Déploiement
-- Leo Bernard — ARIA / JS fallback / CI-CD
+- Sabrina Attos - sabrina.attos@gmail.com
+- Barbot Jim - jimbarbot55@gmail.com
+- Moran Diego - diegoeman00@gmail.com
+- Janus Alexis - janusalexis@gmail.com
+- Jacques Chen - jacqueschen92@gmail.com
 
 > Chaque section du code est annotée avec des commentaires d'identification :  
 > `<!-- Début [section] – Prénom Nom -->` / `<!-- Fin [section] – Prénom Nom -->`
