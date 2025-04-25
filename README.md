@@ -15,28 +15,28 @@ L’application respecte les normes WCAG 2.1 (niveau AAA ciblé), sans framework
 
 ## 🛠️ Fonctionnalités clés
 
-### 📋 Liste des mandats
+### Liste des mandats
 - Affichage clair des mandats actifs
 - Détails : nom, localisation, tribunal, date limite
 - Navigation 100% clavier
 
-### 📍 Suivi de localisation
+### Suivi de localisation
 - Adresse cible (non géolocalisée)
 - Informations régionales (État, juridiction)
 
-### ⚖️ Guide légal par État
+###  Guide légal par État
 - Affichage HTML statique des lois principales par État américain
 - Contraste élevé, lecture linéaire, lisible par lecteurs d'écran
 
-### ✅ Checklist de mission
+### Checklist de mission
 - Étapes à valider avant, pendant et après une intervention
 - Interface accessible avec retour visuel clair
 
-### 🧾 Journal de bord
+### Journal de bord
 - Entrée d’évènements avec horodatage manuel
 - Permet de conserver des traces en cas de litige ou de suivi
 
-### 📁 Historique des missions
+### Historique des missions
 - Archivage simple des missions terminées
 - Utilisation de `localStorage` pour la persistance (si disponible)
 
@@ -75,14 +75,6 @@ L’application respecte les normes WCAG 2.1 (niveau AAA ciblé), sans framework
 - Polices web-safe ou hébergées localement
 - Aucune dépendance externe inutile (pas de frameworks, CDN ou librairies JS tierces)
 
----
-
-## 🚀 Déploiement
-
-- Accès en ligne : [https://votre-utilisateur.github.io/nom-du-projet](https://votre-utilisateur.github.io/nom-du-projet)
-- Mise en ligne automatique via GitHub Actions après chaque *push* sur la branche `main`
-
----
 
 ## 🧪 Audits & Tests
 
