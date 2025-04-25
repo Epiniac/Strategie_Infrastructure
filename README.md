@@ -15,13 +15,31 @@ L’application respecte les normes WCAG 2.1 (niveau AAA ciblé), sans framework
 
 ## 🛠️ Fonctionnalités clés
 
-**Gestion des missions** : Interface simple pour enregistrer et suivre les missions en cours, avec des informations essentielles sur les fugitifs.​
+### 📋 Liste des mandats
+- Affichage clair des mandats actifs
+- Détails : nom, localisation, tribunal, date limite
+- Navigation 100% clavier
 
-**Checklist de conformité légale** : Guides interactifs rappelant les procédures légales à suivre selon l'État concerné.​
+### 📍 Suivi de localisation
+- Adresse cible (non géolocalisée)
+- Informations régionales (État, juridiction)
 
-**Journal de bord sécurisé** : Possibilité de consigner les actions entreprises lors de chaque mission, utile en cas de vérification ou de litige.​
+### ⚖️ Guide légal par État
+- Affichage HTML statique des lois principales par État américain
+- Contraste élevé, lecture linéaire, lisible par lecteurs d'écran
 
-**Ressources et formations** : Accès à des documents et vidéos de formation sur les meilleures pratiques et la gestion des risques.
+### ✅ Checklist de mission
+- Étapes à valider avant, pendant et après une intervention
+- Interface accessible avec retour visuel clair
+
+### 🧾 Journal de bord
+- Entrée d’évènements avec horodatage manuel
+- Permet de conserver des traces en cas de litige ou de suivi
+
+### 📁 Historique des missions
+- Archivage simple des missions terminées
+- Utilisation de `localStorage` pour la persistance (si disponible)
+
 
 > _"C'est border..."_
 
