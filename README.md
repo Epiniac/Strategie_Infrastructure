@@ -5,8 +5,10 @@ Développer une application web statique, ultra-légère et 100% accessible, con
 L’application respecte les normes WCAG 2.1 (niveau AAA ciblé), sans frameworks modernes, et est déployée via GitHub Pages.
 
 ## 🧩 Thème & Problématique
-**Thème :** Bounty Hunter. 
+**Thème :** *Bounty Hunter*
+
 **Objectif :** Fournir aux chasseurs de primes un outil numérique minimaliste pour les aider à gérer leurs missions, améliorer leur sécurité et assurer une meilleure conformité légale.​
+
 **Problématique :** Comment améliorer la sécurité, l'efficacité et la conformité légale des chasseurs de primes tout en respectant les contraintes techniques d'une application web ultra-légère et accessible ?
 
 > _"Notre application répond à un besoin réel de ce corps de métier en apportant une solution simple, rapide et accessible."_
