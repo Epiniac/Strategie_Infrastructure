@@ -98,5 +98,5 @@ L’application respecte les normes WCAG 2.1 (niveau AAA ciblé), sans framework
 │   └── fonts/
 ├── .github/
 │   └── workflows/
-│       └── deploy.yml
+│       └── static.yml
 └── README.md
