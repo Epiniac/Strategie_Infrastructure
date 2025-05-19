@@ -1,0 +1,17 @@
+:root {
+      --bg: #121212;
+      --text: #ffffff;
+      --accent: #00ffff;
+      --focus: #ffff00;
+      --card-bg: #1e1e1e;
+      --border: #333;
+    }
+
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 1rem;
+    }
