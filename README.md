@@ -89,6 +89,8 @@ L’application respecte les normes WCAG 2.1 (niveau AAA ciblé), sans framework
 
 ```bash
 ├── index.html
+├── laws.html
+├── mandats.html
 ├── css/
 │   └── style.css
 ├── js/
