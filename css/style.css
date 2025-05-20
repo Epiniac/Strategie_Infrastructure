@@ -1,17 +1,312 @@
 :root {
-      --bg: #121212;
-      --text: #ffffff;
-      --accent: #00ffff;
-      --focus: #ffff00;
-      --card-bg: #1e1e1e;
-      --border: #333;
-    }
+  --bg: #121212;
+  --text: #ffffff;
+  --accent: #00ffff;
+  --focus: #ffff00;
+  --card-bg: #1e1e1e;
+  --border: #333;
+}
 
-    body {
-      margin: 0;
-      font-family: sans-serif;
-      background-color: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-      padding: 1rem;
-    }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  padding: 1rem;
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+}
+
+a {
+  text-decoration: underline;
+  color: var(--accent);
+  transition: color 0.2s;
+}
+
+a:focus, button:focus, input:focus, textarea:focus {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+}
+
+a:hover {
+  color: #fff700;
+}
+
+header {
+  background-color: #212529;
+  color: white;
+  padding: 20px 20px;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.header-container {
+  max-width: 1200px;
+  margin-left: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo img {
+  height: 40px;
+  filter: invert(100%);
+  margin-left: auto;
+}
+
+.logo h3 {
+  margin: 0;
+  color: var(--accent);
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: var(--accent);
+}
+
+.header-social a:hover {
+  background-color: white;
+  color: #212529;
+}
+
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+  .nav-links a {
+    display: block;
+    margin: 10px 0;
+  }
+}
+
+main {
+  max-width: 900px;
+  margin: 5rem auto;
+  padding: 0 1rem;
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+main section {
+  margin-top: 0;
+  margin-bottom: 3rem;
+}
+
+section:last-child {
+  margin-bottom: 0;
+}
+
+main .container {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+h1, h2, h5 {
+  color: var(--accent);
+}
+
+h2 {
+  font-size: 1.5em;
+  border-bottom: 2px solid var(--accent);
+  padding-bottom: 0.2em;
+}
+
+label {
+  display: block;
+  margin-top: 1em;
+  font-weight: bold;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 0.5em;
+  font-size: 1em;
+  border: 1px solid var(--border);
+  background: #fff;
+  color: #000;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  margin-top: 1em;
+  padding: 0.5em 1em;
+  background: var(--accent);
+  color: #000;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s, color 0.2s;
+}
+
+button:hover {
+  background: #fff700;
+  color: #000;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  border-top: 1px solid var(--accent);
+  padding: 0.5em 0;
+}
+
+/* Footer */
+footer {
+  background-color: #212529;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+  margin-top: 2rem;
+  font-size: 0.95em;
+}
+
+.social-buttons a {
+  display: inline-block;
+  margin: 5px;
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 50%;
+  color: white;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.social-buttons img {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  filter: invert(100%);
+}
+
+.social-buttons a:hover {
+  background-color: var(--accent);
+  color: #212529;
+}
+
+.newsletter-form {
+  margin: 20px 0;
+}
+
+.newsletter-form input[type="email"] {
+  padding: 10px;
+  width: 250px;
+  max-width: 90%;
+  margin: 10px 0;
+  background: #fff;
+  color: #000;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+}
+
+.newsletter-form button {
+  padding: 10px 20px;
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.newsletter-form button:hover {
+  background-color: var(--accent);
+  color: #000;
+}
+
+.footer-text {
+  margin: 20px 0;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin: 40px 0;
+}
+.footer-links p {
+  margin: 5px 0px;
+  text-align: left;
+}
+
+.footer-links img {
+  filter: invert(100%);
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+  color: var(--accent);
+}
+
+.footer-links .footer-column .icon {
+  width: 16px;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+@media (max-width: 768px) {
+  .footer-links {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.copyright {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  font-size: 14px;
+}
+
+/* Cartes et grilles (pour journal/historique) */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.card h2 {
+  margin-top: 0;
+  color: var(--accent);
+}
+
+.card p {
+  margin: 0.5rem 0;
+}
