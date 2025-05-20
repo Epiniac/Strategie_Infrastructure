@@ -91,6 +91,7 @@ L’application respecte les normes WCAG 2.1 (niveau AAA ciblé), sans framework
 ├── index.html
 ├── laws.html
 ├── mandats.html
+├── connect_page.html
 ├── css/
 │   └── style.css
 ├── js/
