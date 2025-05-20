@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bounty Hunter</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <header>
+        <div class="header-container">
+          <div class="logo">
+            <h3>Bounty Hunter</h1>
+          </div>
+      
+          <div class="header-social">
+             <nav class="nav-links">
+            <a href="Index.html">Accueil</a>
+            <a href="#">Mandats</a>
+            <a href="Connect_Page.html">Connexion</a>
+          </nav>
+          </div>
+        </div>
+    </header>
+
+
+
+    <main>
+        <div class="container">
+            <h1>Bounty Hunter</h1>
+            <p>Bienvenue dans votre tableau de bord de chasseur de primes !</p>
+
+            <!-- Journal de bord -->
+             
+            <section aria-labelledby="journal-title">
+                <h2 id="journal-title">📝 Journal de bord</h2>
+                <form id="journal-form">
+                  <label for="timestamp">Horodatage (manuel)</label>
+                  <input type="text" id="timestamp" name="timestamp" placeholder="Ex: 2025-05-19 14:30" required>
+
+                  <label for="event">Évènement</label>
+                  <textarea id="event" name="event" rows="4" required></textarea>
+
+                  <button type="submit">Ajouter au journal</button>
+                </form>
+
+                <ul id="journal-entries" aria-live="polite"></ul>
+
+            </section>
+
+            <!-- Historique des missions -->
+            <section aria-labelledby="history-title">
+                <h2 id="history-title">📂 Historique des missions</h2>
+                <ul id="mission-history" aria-live="polite">
+                  <li><strong>Mission #001</strong> — Terminé le 2025-04-10</li>
+                  <li><strong>Mission #002</strong> — Terminé le 2025-04-22</li>
+                  <li><strong>Mission #003</strong> — Terminé le 2025-05-05</li>
+                </ul>
+            </section>
+        </div>
+    </main>
+
+
+
+    <footer>
+    
+        <div class="newsletter-form">
+          <p><strong>Inscrivez-vous à notre newsletter</strong></p>
+          <form action="#">
+            <input type="email" placeholder="Adresse email" required>
+            <button type="submit">S'abonner</button>
+          </form>
+        </div>
+    
+        <div class="footer-text">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum repellat quaerat
+          voluptatibus placeat nam, commodi optio pariatur est quia magnam.</p>
+        </div>
+        <div class="footer-links">
+          <div>
+            <h5>Produits</h5>
+              <p><a href="#">Mandat 1</a></p>
+              <p><a href="#">Mandats 2</a></p>
+              <p><a href="#">Mandats 3</a></p>
+          </div>
+          <div>
+              <h5>Liens</h5>
+                <p><a href="#">Paramètres</a></p>
+                <p><a href="#">Mandats</a></p>
+                <p><a href="#">Aide</a></p>
+          </div>
+          <div class="footer-column">
+            <h5>Contacts</h5>
+              <p><img src="icons/houseN.svg" class="icon"> lorem ipsum</p>
+              <p><img src="icons/mailN.svg" class="icon"> info@exemple.com</p>
+              <p><img src="icons/phoneN.svg" class="icon"> 06 06 06 06 06</p>
+          </div>
+        </div>
+    
+        <div class="copyright">
+          © 2025 Copyright
+        </div>
+    </footer>
+</body>
+</html>
