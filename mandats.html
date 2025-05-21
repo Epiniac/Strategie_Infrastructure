@@ -52,9 +52,18 @@
     footer {
       margin-top: 2rem;
       text-align: center;
-      font-size: 0.9em;
-      color: #888;
+      font-size: 1em;
     }
+    .section-title {
+  grid-column: 1 / -1; 
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--accent);
+  color: var(--accent);
+}
+
   </style>
 </head>
 <body>
@@ -64,8 +73,9 @@
   </header>
 
   <main class="grid" aria-label="Liste des primes">
-    <section class="card" tabindex="0">
-      <h2>Jane Roe</h2>
+    <h2 class="section-title">Résultats des mandats disponibles</h2>
+    <section class="card" tabindex="0" aria-labelledby="jane-roe">
+  <h2 id="jane-roe">Jane Roe</h2>
       <img src="./assets/images/Jane_Roe.jpg" aria-label="Adult female with brown hair and brown eyes" alt="Jane Roe" />
       <p><strong>Lieu :</strong> Arizona</p>
       <p><strong>Tribunal :</strong> Phoenix Court</p>
@@ -73,8 +83,8 @@
       <p><strong>Prime :</strong> 11 000$</p>
     </section>
 
-    <section class="card" tabindex="0">
-      <h2>John Doe</h2>
+    <section class="card" tabindex="0" aria-labelledby="john-doe">
+      <h2 id="john-doe">John Doe</h2>
       <img src="./assets/images/John_Doe.jpg" alt="John Doe" aria-label="Old male with gray hair and brown eyes" />
       <p><strong>Lieu :</strong> Texas</p>
       <p><strong>Tribunal :</strong> Dallas High Court</p>
@@ -82,17 +92,17 @@
       <p><strong>Prime :</strong> 11 000$</p>
     </section>
 
-    <section class="card" tabindex="0">
-      <h2>Maria Black</h2>
-        <img src="./assets/images/Not_Available.jpg" alt="Maria Black" aria-label="No picture available" />
+    <section class="card" tabindex="0" aria-labelledby="maria-black">
+      <h2 id="maria-black">Maria Black</h2>
+      <img src="./assets/images/Not_Available.jpg" alt="Maria Black" aria-label="No picture available" />
       <p><strong>Lieu :</strong> Nevada</p>
       <p><strong>Tribunal :</strong> Las Vegas Circuit</p>
       <p><strong>Échéance :</strong> 01/06/2025</p>
       <p><strong>Prime :</strong> 11 000$</p>
     </section>
 
-    <section class="card" tabindex="0">
-      <h2>Rick Vance</h2>
+    <section class="card" tabindex="0" aria-labelledby="rick-vance">
+      <h2 id="rick-vance">Rick Vance</h2>
       <img src="./assets/images/Rick_Vance.jpg" alt="Rick Vance" aria-label="Adult male with brown hair brown mustache and brown eyes" />
       <p><strong>Lieu :</strong> Californie</p>
       <p><strong>Tribunal :</strong> LA Superior Court</p>
@@ -100,8 +110,8 @@
       <p><strong>Prime :</strong> 11 000$</p>
     </section>
 
-    <section class="card" tabindex="0">
-      <h2>Brontis Guilloux</h2>
+    <section class="card" tabindex="0" aria-labelledby="brontis-guilloux">
+      <h2 id="brontis-guilloux">Brontis Guilloux</h2>
       <img src="./assets/images/Brontis_Guilloux.jpeg" alt="Brontis Guill" aria-label="Adult male with gray hair and beard and brown eyes" />
       <p><strong>Lieu :</strong> Montreuil</p>
       <p><strong>Tribunal :</strong> Bobigny</p>
@@ -109,8 +119,8 @@
       <p><strong>Prime :</strong> 11 000$</p>
     </section>
 
-    <section class="card" tabindex="0">
-      <h2>Cassian Jeron Andor</h2>
+    <section class="card" tabindex="0" aria-labelledby="cassian-andor">
+      <h2 id="cassian-andor">Cassian Andor</h2>
       <img src="./assets/images/Cassian_Andor.jpeg" alt="Cassian Jeron Andor" aria-label="Adult male with black hair and brown eyes" />
       <p><strong>Lieu :</strong> Kenari</p>
       <p><strong>Tribunal :</strong> BSI</p>
@@ -118,8 +128,8 @@
       <p><strong>Prime :</strong> 11 000$</p>
     </section>
 
-    <section class="card" tabindex="0">
-      <h2>Han Solo</h2>
+    <section class="card" tabindex="0" aria-labelledby="han-solo">
+      <h2 id="han-solo">Han Solo</h2>
       <img src="./assets/images/Han_Solo.jpg" alt="Han Solo" aria-label="Adult male with black hair and brown eyes" />
       <p><strong>Lieu :</strong> Corellia</p>
       <p><strong>Tribunal :</strong> Jabba le Hutt</p>
@@ -127,8 +137,8 @@
       <p><strong>Prime :</strong> 11 000$</p>
     </section>
     
-    <section class="card" tabindex="0">
-      <h2>Obi-Wan Kenobi</h2>
+    <section class="card" tabindex="0" aria-labelledby="Obi-Wan-Kenobi">
+      <h2 id="Obi-Wan-Kenobi">Obi-Wan Kenobi</h2>
       <img src="./assets/images/Obi_Wan.jpeg" alt="Obi-Wan Kenobi" aria-label="Adult male with blond hair and beard and blue eyes" />
       <p><strong>Lieu :</strong> Tatooine</p>
       <p><strong>Tribunal :</strong> L'étoile noire</p>
@@ -139,6 +149,8 @@
 
   <footer>
     <p>&copy; 2025 - Direction des Chasseurs de Primes</p>
+    <p><a href="#top">Retour en haut</a></p>
+    <p><a href="index.html">Accueil</a></p>
   </footer>
 </body>
 </html>
