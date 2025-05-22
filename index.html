@@ -15,17 +15,20 @@
     </div>
 
     <div class="header-social">
-       <nav class="nav-links">
-      <a href="index.html">Accueil</a>
-      <a href="mandats.html">Mandats</a>
-      <a href="#">S'inscrire</a>
-      <a href="connect_page.html">Connexion</a>
-    </nav>
+        <nav class="nav-links" role="navigation" aria-label="Navigation des pages">
+          <a href="index.html">Accueil</a>
+          <a href="mandats.html">Mandats</a>
+          <a href="#">S'inscrire</a>
+          <a href="connect_page.html">Connexion</a>
+        </nav>
+      </div>
     </div>
-  </div>
   </header>
 
   <main>
+    <aside aria-label="Prime urgente" style="background: rgb(161, 16, 16); padding: 1rem; color: white; margin-bottom: 2rem;">
+      ⚠️ <strong>Prime urgente :</strong> John Doe — à appréhender avant le 25/05 à Dallas.
+    </aside>
     <section>
       <h2>Bienvenue sur RecovThem — La plateforme dédiée aux chasseurs de prime professionnels</h2>
       <p>Dans un métier où chaque seconde compte et chaque information peut faire la différence, ce site est votre allié numérique de confiance.</p>
@@ -43,25 +46,40 @@
       <button id="inscription">S'inscrire</button>
     </section>
 
-    <section>
-      <h2>Rechercher une cible</h2>
-      <form>
-        <label for="nom">Nom :</label>
-        <input type="text" id="nom" name="nom" required />
-
-        <label for="prime">Prime :</label>
-        <input type="number" id="prime" name="prime" required />
-
-        <button type="submit">Lancer la chasse</button>
-      </form>
+    <section aria-labelledby="partenaires" style="margin-top: 2rem;">
+      <h2 id="partenaires" style="color: var(--accent); text-align: center;">Sites Partenaires</h2>
+      <ul style="list-style: none; padding: 0; max-width: 600px; margin: 0 auto;">
+        <li style="margin: 0.5rem 0;">
+          <a href="https://www.usmarshals.gov/" target="_blank" rel="noopener noreferrer" style="color: azure;">
+            🔗 US Marshals Service
+          </a>
+        </li>
+        <li style="margin: 0.5rem 0;">
+          <a href="https://www.fugitive.com/" target="_blank" rel="noopener noreferrer" style="color: azure;">
+            🔗 Fugitive Watch
+          </a>
+        </li>
+        <li style="margin: 0.5rem 0;">
+          <a href="https://www.nationalbailbonddirectory.com/" target="_blank" rel="noopener noreferrer" style="color: azure;">
+            🔗 National Bail Bond Directory
+          </a>
+        </li>
+        <li style="margin: 0.5rem 0;">
+          <a href="https://www.springfield-armory.com/" target="_blank" rel="noopener noreferrer" style="color: azure;">
+            🔗 Springfiel Armory (20% Off)
+          </a>
+        </li>
+      </ul>
     </section>
+
+    <div id="notification" aria-live="polite"></div> <!-- Zone dynamique pour afficher des messages (ex: succès, erreur) accessibles aux lecteurs d'écran. Si on arrive à le faire marcher mdrr -->
   </main>
 
   <footer>
     
         <div class="newsletter-form">
           <p><strong>Inscrivez-vous à notre newsletter</strong></p>
-          <form action="#">
+          <form action="#" role="form" aria-label="Inscription à la newsletter">
             <input type="email" placeholder="Adresse email" required>
             <button type="submit">S'abonner</button>
           </form>
@@ -73,21 +91,21 @@
         </div>
         <div class="footer-links">
           <div>
-              <h5>Liens</h5>
+              <h3>Liens</h3>
                 <p><a href="#">Contrast</a></p>
                 <p><a href="mandats.html">Mandats</a></p>
                 <p><a href="laws.html">Legislations</a></p>
+                <p><a href="#top">Retour en haut</a></p>
           </div>
           <div class="footer-column">
-            <h5>Contacts</h5>
-              <p><img src="icons/houseN.svg" class="icon"> lorem ipsum</p>
-              <p><img src="icons/mailN.svg" class="icon"> info@exemple.com</p>
-              <p><img src="icons/phoneN.svg" class="icon"> 06 06 06 06 06</p>
+            <h3>Contacts</h3>
+              <p><img src="icons/houseN.svg" class="icon" alt="Adresse" /> lorem ipsum</p>
+              <p><img src="icons/mailN.svg" class="icon" alt="Email" /> info@exemple.com</p>
+              <p><img src="icons/phoneN.svg" class="icon" alt="Téléphone" /> 06 06 06 06 06</p>
           </div>
         </div>
     
         <p>&copy; 2025 - Direction des Chasseurs de Primes</p>
     </footer>
-
 </body>
 </html>

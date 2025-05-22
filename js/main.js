@@ -7,3 +7,7 @@ document.getElementById('journalForm').addEventListener('submit', function (e) {
       document.getElementById('journalList').appendChild(li);
       this.reset();
     });
+
+const zone = document.getElementById('notification');
+const date = new Date().toLocaleString();
+zone.textContent = '📅 Aujourd’hui : ' + date;
