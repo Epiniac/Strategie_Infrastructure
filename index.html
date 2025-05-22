@@ -26,6 +26,9 @@
   </header>
 
   <main>
+    <aside aria-label="Prime urgente" style="background: rgb(161, 16, 16); padding: 1rem; color: white; margin-bottom: 2rem;">
+      ⚠️ <strong>Prime urgente :</strong> John Doe — à appréhender avant le 25/05 à Dallas.
+    </aside>
     <section>
       <h2>Bienvenue sur RecovThem — La plateforme dédiée aux chasseurs de prime professionnels</h2>
       <p>Dans un métier où chaque seconde compte et chaque information peut faire la différence, ce site est votre allié numérique de confiance.</p>
@@ -43,17 +46,30 @@
       <button id="inscription">S'inscrire</button>
     </section>
 
-    <section>
-      <h2>Rechercher une cible</h2>
-      <form role="form" aria-label="Formulaire de recherche de cible">
-        <label for="nom">Nom :</label>
-        <input type="text" id="nom" name="nom" required />
-
-        <label for="prime">Prime :</label>
-        <input type="number" id="prime" name="prime" required />
-
-        <button type="submit">Lancer la chasse</button>
-      </form>
+    <section aria-labelledby="partenaires" style="margin-top: 2rem;">
+      <h2 id="partenaires" style="color: var(--accent); text-align: center;">Sites Partenaires</h2>
+      <ul style="list-style: none; padding: 0; max-width: 600px; margin: 0 auto;">
+        <li style="margin: 0.5rem 0;">
+          <a href="https://www.usmarshals.gov/" target="_blank" rel="noopener noreferrer" style="color: azure;">
+            🔗 US Marshals Service
+          </a>
+        </li>
+        <li style="margin: 0.5rem 0;">
+          <a href="https://www.fugitive.com/" target="_blank" rel="noopener noreferrer" style="color: azure;">
+            🔗 Fugitive Watch
+          </a>
+        </li>
+        <li style="margin: 0.5rem 0;">
+          <a href="https://www.nationalbailbonddirectory.com/" target="_blank" rel="noopener noreferrer" style="color: azure;">
+            🔗 National Bail Bond Directory
+          </a>
+        </li>
+        <li style="margin: 0.5rem 0;">
+          <a href="https://www.springfield-armory.com/" target="_blank" rel="noopener noreferrer" style="color: azure;">
+            🔗 Springfiel Armory (20% Off)
+          </a>
+        </li>
+      </ul>
     </section>
 
     <div id="notification" aria-live="polite"></div> <!-- Zone dynamique pour afficher des messages (ex: succès, erreur) accessibles aux lecteurs d'écran. Si on arrive à le faire marcher mdrr -->
@@ -91,6 +107,5 @@
     
         <p>&copy; 2025 - Direction des Chasseurs de Primes</p>
     </footer>
-
 </body>
 </html>
