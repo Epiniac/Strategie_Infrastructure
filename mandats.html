@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Liste des Primes</title>
   <link rel="stylesheet" href="./css/style.css">
+  <script src="js/main.js"></script>
+
   <style>
 
     header {
@@ -67,14 +69,14 @@
   </style>
 </head>
 <body>
-  <header>
+  <header role="banner">
     <h1>Primes Disponibles</h1>
     <p>Interface officielle — chasseurs de primes</p>
   </header>
 
-  <main class="grid" aria-label="Liste des primes">
-    <h2 class="section-title">Résultats des mandats disponibles</h2>
-    <section class="card" tabindex="0" aria-labelledby="jane-roe">
+  <main role="main" class="grid" aria-label="Liste des primes">
+    <h2 class="section-title" id="mandats">Résultats des mandats disponibles</h2>
+    <section class="card" role="region" tabindex="0" aria-labelledby="jane-roe">
   <h2 id="jane-roe">Jane Roe</h2>
       <img src="./assets/images/Jane_Roe.jpg" aria-label="Adult female with brown hair and brown eyes" alt="Jane Roe" />
       <p><strong>Lieu :</strong> Arizona</p>
@@ -83,7 +85,7 @@
       <p><strong>Prime :</strong> 11 000$</p>
     </section>
 
-    <section class="card" tabindex="0" aria-labelledby="john-doe">
+    <section class="card" role="region" tabindex="0" aria-labelledby="john-doe">
       <h2 id="john-doe">John Doe</h2>
       <img src="./assets/images/John_Doe.jpg" alt="John Doe" aria-label="Old male with gray hair and brown eyes" />
       <p><strong>Lieu :</strong> Texas</p>
@@ -92,7 +94,7 @@
       <p><strong>Prime :</strong> 11 000$</p>
     </section>
 
-    <section class="card" tabindex="0" aria-labelledby="maria-black">
+    <section class="card" tabindex="0" role="region" aria-labelledby="maria-black">
       <h2 id="maria-black">Maria Black</h2>
       <img src="./assets/images/Not_Available.jpg" alt="Maria Black" aria-label="No picture available" />
       <p><strong>Lieu :</strong> Nevada</p>
@@ -101,7 +103,7 @@
       <p><strong>Prime :</strong> 11 000$</p>
     </section>
 
-    <section class="card" tabindex="0" aria-labelledby="rick-vance">
+    <section class="card" tabindex="0" role="region" aria-labelledby="rick-vance">
       <h2 id="rick-vance">Rick Vance</h2>
       <img src="./assets/images/Rick_Vance.jpg" alt="Rick Vance" aria-label="Adult male with brown hair brown mustache and brown eyes" />
       <p><strong>Lieu :</strong> Californie</p>
@@ -110,7 +112,7 @@
       <p><strong>Prime :</strong> 11 000$</p>
     </section>
 
-    <section class="card" tabindex="0" aria-labelledby="brontis-guilloux">
+    <section class="card" tabindex="0" role="region" aria-labelledby="brontis-guilloux">
       <h2 id="brontis-guilloux">Brontis Guilloux</h2>
       <img src="./assets/images/Brontis_Guilloux.jpeg" alt="Brontis Guill" aria-label="Adult male with gray hair and beard and brown eyes" />
       <p><strong>Lieu :</strong> Montreuil</p>
@@ -119,7 +121,7 @@
       <p><strong>Prime :</strong> 11 000$</p>
     </section>
 
-    <section class="card" tabindex="0" aria-labelledby="cassian-andor">
+    <section class="card" tabindex="0" role="region" aria-labelledby="cassian-andor">
       <h2 id="cassian-andor">Cassian Andor</h2>
       <img src="./assets/images/Cassian_Andor.jpeg" alt="Cassian Jeron Andor" aria-label="Adult male with black hair and brown eyes" />
       <p><strong>Lieu :</strong> Kenari</p>
@@ -128,7 +130,7 @@
       <p><strong>Prime :</strong> 11 000$</p>
     </section>
 
-    <section class="card" tabindex="0" aria-labelledby="han-solo">
+    <section class="card" tabindex="0" role="region" aria-labelledby="han-solo">
       <h2 id="han-solo">Han Solo</h2>
       <img src="./assets/images/Han_Solo.jpg" alt="Han Solo" aria-label="Adult male with black hair and brown eyes" />
       <p><strong>Lieu :</strong> Corellia</p>
@@ -137,7 +139,7 @@
       <p><strong>Prime :</strong> 11 000$</p>
     </section>
     
-    <section class="card" tabindex="0" aria-labelledby="Obi-Wan-Kenobi">
+    <section class="card" tabindex="0" role="region" aria-labelledby="Obi-Wan-Kenobi">
       <h2 id="Obi-Wan-Kenobi">Obi-Wan Kenobi</h2>
       <img src="./assets/images/Obi_Wan.jpeg" alt="Obi-Wan Kenobi" aria-label="Adult male with blond hair and beard and blue eyes" />
       <p><strong>Lieu :</strong> Tatooine</p>
@@ -147,10 +149,15 @@
     </section>
   </main>
 
-  <footer>
+  <footer role="contentinfo">
     <p>&copy; 2025 - Direction des Chasseurs de Primes</p>
     <p><a href="#top">Retour en haut</a></p>
     <p><a href="index.html">Accueil</a></p>
+    <div class="accessibility-tools" style="margin-top: 2rem;">
+        <h3>Outils d'accessibilité</h3>
+        <button id="btn-contrast" aria-pressed="false" aria-label="Activer le contraste élevé">Contraste élevé</button>
+        <button id="btn-text-size" aria-pressed="false" aria-label="Augmenter la taille du texte">Augmenter la taille du texte</button>
+        </div>
   </footer>
 </body>
 </html>

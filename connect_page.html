@@ -1,21 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bounty Hunter</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js"></script>
+
 
 </head>
-<body>
-    <header>
+<body id="top">
+    <header role="banner">
         <div class="header-container">
           <div class="logo">
             <h1>RecovThem</h1>
           </div>
           <h2 class="headline">Welcome Hunter</h2>
           <div class="header-social">
-             <nav class="nav-links">
+            <nav class="nav-links" role="navigation" aria-label="Navigation principale">
             <a href="index.html">Accueil</a>
             <a href="mandats.html">Mandats</a>
           </nav>
@@ -25,7 +27,7 @@
 
 
 
-    <main>
+    <main role="main">
       <aside aria-label="Prime urgente" style="background: rgb(161, 16, 16); padding: 1rem; color: white; margin-bottom: 2rem;">
       ⚠️ <strong>Prime urgente :</strong> John Doe — à appréhender avant le 25/05 à Dallas.
       </aside>
@@ -37,7 +39,7 @@
              
             <section aria-labelledby="journal-title">
                 <h2 id="journal-title">📝 Journal de bord</h2>
-                <form id="journal-form" role="form" aria-label="Ajouter un événement au journal">
+                <form id="journal-form" role="form" aria-labelledby="Ajouter un événement au journal">
                   <label for="timestamp">Horodatage (manuel)</label>
                   <input type="text" id="timestamp" name="timestamp" placeholder="Ex: 2025-05-19 14:30" required>
 
@@ -61,7 +63,7 @@
                 </ul>
             </section>
         </div>
-        <section aria-labelledby="partenaires" style="margin-top: 2rem;">
+        <section aria-label="Partenaires professionnels" style="margin-top: 2rem;">
           <h2 id="partenaires" style="color: var(--accent); text-align: center;">Sites Partenaires</h2>
           <ul style="list-style: none; padding: 0; max-width: 600px; margin: 0 auto;">
             <li style="margin: 0.5rem 0;">
@@ -90,7 +92,7 @@
 
 
 
-    <footer>
+    <footer role="contentinfo">
     
         <div class="newsletter-form">
           <p><strong>Inscrivez-vous à notre newsletter</strong></p>
@@ -121,6 +123,10 @@
         </div>
     
         <p>&copy; 2025 - Direction des Chasseurs de Primes</p>
+        <div class="accessibility-tools" style="margin-top: 2rem;">
+        <h3>Outils d'accessibilité</h3>
+        <button id="btn-contrast" aria-pressed="false" aria-label="Activer le contraste élevé">Contraste élevé</button>
+        <button id="btn-text-size" aria-pressed="false" aria-label="Augmenter la taille du texte">Augmenter la taille du texte</button>
     </footer>
 </body>
 </html>

@@ -304,3 +304,28 @@ a:focus, button:focus {
 .card p {
   margin: 0.5rem 0;
 }
+
+.high-contrast {
+  background-color: #000 !important;
+  color: #ff0 !important;
+}
+
+.high-contrast a,
+.high-contrast h1,
+.high-contrast h2,
+.high-contrast h3,
+.high-contrast p,
+.high-contrast li {
+  color: #ff0 !important;
+  border-color: #ff0 !important;
+}
+
+.high-contrast a:hover,
+.high-contrast a:focus {
+  color: #fff700 !important;
+  text-decoration: underline;
+}
+
+.text-large {
+  font-size: 1.3em;
+}

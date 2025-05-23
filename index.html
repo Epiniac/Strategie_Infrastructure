@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bounty Hunter</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js"></script>
 </head>
-<body>
+<body id="top">
 
-  <header>
+  <header role="banner">
   <div class="header-container">
     <div class="logo">
       <h1>RecovThem</h1>
@@ -25,11 +26,11 @@
     </div>
   </header>
 
-  <main>
+  <main role="main">
     <aside aria-label="Prime urgente" style="background: rgb(161, 16, 16); padding: 1rem; color: white; margin-bottom: 2rem;">
       ⚠️ <strong>Prime urgente :</strong> John Doe — à appréhender avant le 25/05 à Dallas.
     </aside>
-    <section>
+    <section aria-label="Présentation de la plateforme">
       <h2>Bienvenue sur RecovThem — La plateforme dédiée aux chasseurs de prime professionnels</h2>
       <p>Dans un métier où chaque seconde compte et chaque information peut faire la différence, ce site est votre allié numérique de confiance.</p>
       <p> Conçue spécialement pour les chasseurs de prime opérant sur le territoire américain, notre application vous offre les outils essentiels pour localiser, suivre et capturer efficacement les fugitifs.</p>
@@ -46,7 +47,7 @@
       <button id="inscription">S'inscrire</button>
     </section>
 
-    <section aria-labelledby="partenaires" style="margin-top: 2rem;">
+    <section aria-label="Partenaires professionnels" style="margin-top: 2rem;">
       <h2 id="partenaires" style="color: var(--accent); text-align: center;">Sites Partenaires</h2>
       <ul style="list-style: none; padding: 0; max-width: 600px; margin: 0 auto;">
         <li style="margin: 0.5rem 0;">
@@ -75,7 +76,7 @@
     <div id="notification" aria-live="polite"></div> <!-- Zone dynamique pour afficher des messages (ex: succès, erreur) accessibles aux lecteurs d'écran. Si on arrive à le faire marcher mdrr -->
   </main>
 
-  <footer>
+  <footer role="contentinfo">
     
         <div class="newsletter-form">
           <p><strong>Inscrivez-vous à notre newsletter</strong></p>
@@ -106,6 +107,13 @@
         </div>
     
         <p>&copy; 2025 - Direction des Chasseurs de Primes</p>
+
+        <div class="accessibility-tools" style="margin-top: 2rem;">
+        <h3>Outils d'accessibilité</h3>
+        <button id="btn-contrast" aria-pressed="false" aria-label="Activer le contraste élevé">Contraste élevé</button>
+        <button id="btn-text-size" aria-pressed="false" aria-label="Augmenter la taille du texte">Augmenter la taille du texte</button>
+        </div>
+
     </footer>
 </body>
 </html>
